@@ -1,9 +1,10 @@
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        double pricePerKg = 10.0;
+        BigDecimal pricePerKg = BigDecimal.valueOf(10.0);
         DiscountCalculator calculator = new DiscountCalculator(50.0, 5.0);
 
         OrderParser txtParser = new PipeParser();

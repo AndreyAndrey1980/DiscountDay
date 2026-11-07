@@ -8,10 +8,7 @@ public class DiscountCalculator {
     }
 
     public double calculateDiscount(int orderNumber) {
-        if (orderNumber == 1 || orderNumber == 2 || orderNumber == 3) {
-            return startDiscount;
-        }
-        double discount = startDiscount - (orderNumber - 3) * stepDiscount;
+        double discount = startDiscount - (orderNumber - 1) * stepDiscount;
         return Math.max(0.0, discount);
     }
 }
